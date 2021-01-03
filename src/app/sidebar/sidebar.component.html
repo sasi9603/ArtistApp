@@ -1,0 +1,12 @@
+<div class="wrapper">
+    <!-- Side navigation -->
+  <div class="sidenav">
+    <div *ngFor="let artist of artists; index as id">
+          <a data-toggle="tooltip" data-placement="bottom"  [title]="'Artist Name:'+artist.name +' EMAIL:'+ artist.email +' WEBSITE:'+artist.website" [routerLink]="['/post', id]">
+            {{ artist.name }}
+          </a>
+    </div>
+    
+  </div>
+    
+  </div>
